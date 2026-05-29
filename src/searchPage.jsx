@@ -91,7 +91,7 @@ const SearchPage = () => {
             <span className="wrapper"><h1 className="title">BookBase</h1><img src="\world-book-day.png" alt="📖"/></span>
             <div className="searchbar">
                 <button className="search" onClick={handleCategoryChange}>
-                    <img src="\book.png" alt="📖"/>
+                    <img src="/BookBasebook.png" alt="📖"/>
                 </button>
                 <select className="genreSelect" value={category} onChange={handleCategoryChange}>
                     <option value="">Select</option>
@@ -114,7 +114,7 @@ const SearchPage = () => {
                 </select>
                 <input type="text" placeholder="Search" value={searchItem} onChange={handleInputChange} onKeyDown={(e) => e.key === "Enter" && test()}/>
                 <button className="search" onClick={() => test()}>
-                    <img src="/search.png" alt="Search"/>
+                    <img src="/BookBase/search.png" alt="Search"/>
                 </button>
             </div>
             <div className="booklist">
@@ -141,7 +141,7 @@ const SearchPage = () => {
         {clickBook && (<><div className="bookviewer">
             <div className="bookviewCard">
                 <button className="Back" onClick={handleBackClick}>
-                    <img src="/left-arrow.png" alt="Back"/>
+                    <img src="/BookBase/left-arrow.png" alt="Back"/>
                 </button>
                 <img src={selectedBook.volumeInfo.imageLinks?.thumbnail} alt={selectedBook.id}/>
                 <h1>{selectedBook.volumeInfo.title}</h1>
