@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"; 
 import EmbeddedViewer from "./bookViewer";
 
+const API_KEY = import.meta.env.VITE_MY_SECRET_API_KEY;
+
 const SearchPage = () => {
     const [bookList, setBookList] = useState([])
     const [searchItem, setSearchItem] = useState("")
@@ -13,7 +15,7 @@ const SearchPage = () => {
     const test = async (overrideQuery) => {
         const query = overrideQuery || searchItem || RECOMMENDED_QUERY
         const res = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=relevance&maxResults=40&key=AIzaSyDoC7UCQYgoFhfPrnsc6JMO3NAiNH1BxNM`)
+        `https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=relevance&maxResults=40&key=${API_KEY}`)
         const data = await res.json()
         console.log(data.items.length)
         setBookList(data.items || [])
@@ -33,7 +35,7 @@ const SearchPage = () => {
             query2 = category
         } 
         const res = await fetch(
-        `https://www.googleapis.com/books/v1/volumes?q=subject:${encodeURIComponent(category)}+${encodeURIComponent(query2)}&orderBy=relevance&printType=books&maxResults=40&key=AIzaSyDoC7UCQYgoFhfPrnsc6JMO3NAiNH1BxNM`)
+        `https://www.googleapis.com/books/v1/volumes?q=subject:${encodeURIComponent(category)}+${encodeURIComponent(query2)}&orderBy=relevance&printType=books&maxResults=40&key=${API_KEY}`)
         const data = await res.json()
         setBookList(data.items || [])
     }
