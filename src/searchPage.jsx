@@ -88,10 +88,10 @@ const SearchPage = () => {
     return (
         <>
         {!clickBook && (<div className="bookpage">
-            <span className="wrapper"><h1 className="title">BookBase</h1><img src="\world-book-day.png" alt="📖"/></span>
+            <span className="wrapper"><h1 className="title">BookBase</h1><img src="/BookBase/world-book-day.png" alt="📖"/></span>
             <div className="searchbar">
                 <button className="search" onClick={handleCategoryChange}>
-                    <img src="/BookBasebook.png" alt="📖"/>
+                    <img src="/BookBase/book.png" alt="📖"/>
                 </button>
                 <select className="genreSelect" value={category} onChange={handleCategoryChange}>
                     <option value="">Select</option>
