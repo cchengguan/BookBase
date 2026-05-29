@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/jess-bailey-_z2aaldUAFs-unsplash.jpg");
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.bookpage {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #fffcf351, #e7e5d9c4);
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.wrapper img {
+  height: 40px;
+  width: 40px;
+}
+
+.searchbar {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-top: 20px;
+}
+
+.searchbar input {
+    border: none;
+    border-radius: 12px;
+    font-size: x-large;
+    height: 40px;
+    width: 420px;
+    outline: none;
+    background: rgba(255, 255, 255);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.recommended {
+  font-size: x-large;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.recommended:hover {
+  transform: scale(1.01);
+    box-shadow: 
+        0 16px 48px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.search {
+    height: 42px;
+    width: 50px;
+    font-size: x-large;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.search:hover {
+    transform: scale(1.01);
+    box-shadow: 
+        0 16px 48px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.search img {
+  padding-top: 2px;
+  height: 36px;
+  width: 36px;
+}
+
+.booklist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.bookCard img {
+  width: auto;
+  height: 200px;
+}
+
+.bookCard {
+    width: 260px;
+    height: 340px;
+    overflow: hidden;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 8px;
+}
+
+.bookCard h2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    line-clamp: 2;
+    -webkit-box-orient: vertical;    
+    overflow: hidden;         
+    text-overflow: ellipsis;  
+    width: 100%;                   
+    margin: 12px 0;
+}
+
+.bookCard p {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.bookCard:hover {
+    transform: scale(1.01);
+    box-shadow: 
+        0 16px 48px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.bookviewer {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #fffcf351, #e7e5d9c4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.embeddedBookView {
+  flex: 1;
+  width: 75%;
+  min-height: 1000px;
+  margin-top: 20px;
+  display: block; /* Avoid inline elements which collapse sizes */
+}
+
+.bookviewCard {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;       
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 8px;
+}
+
+.bookviewCard img {
+  width: auto;
+  height: 300px;
+  align-self: center;
+  
+}
+
+.bookviewCard h1 {
+  margin-top: 16px;
+  margin-bottom: 0px;
+  align-self: center;
+}
+
+.Link {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.Back {
+  margin-bottom: 16px;
+  background-color: rgba(0, 0, 0, 0.0);
+  outline:none;
+  border: none;
+}
+
+.Back img {
+  height: 50px;
+  width:auto;
+}
+
+.Back:hover {
+  transform: scale(1.03);
+}
+
+.Link {
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: rgba(39, 147, 255, 0.9);
+  margin-right: 4px;
+  padding: 10px;
+}
+
+.preview:hover,
+.Link:hover {
+  background: rgba(0, 48, 158, 0.9);
+}
+
+.rating {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: xx-large;
+  align-self: center;
+}
+
+.previewContainer {
+  align-self: flex-start;
+}
+
+.preview {
+  color: white;
+  font-size: x-large;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background: rgba(39, 147, 255, 0.9);
+  margin-right: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.Linkcontainer {
+  margin-bottom: 10px;
+}
+
+.bookviewCard h3,
+.bookviewCard h4,
+.bookviewCard p {
+    margin: 6px 0;
+}
+
+.genreSelect {
+  font-size: medium;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+}
+
+@media (max-width: 480px) {
+    .bookCard img {
+      width: auto;
+      height: 65%;
+    }
+    .bookCard {
+        width: 90%;
+        height: 90%;
+    }
+    .genreSelect {
+      width: 20%;
+    }
+
+    .searchbar input {
+        font-size: medium;
+        width:40%;
+    }
+
+    .search {
+      font-size: medium;
+    }
+
+    .bookviewCard {
+      width: 100%;
+    }
+
+    .embeddedBookView {
+      width: 100%
+    }
+}
