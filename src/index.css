@@ -310,16 +310,14 @@ body {
       width: 38px;
     }
 
-    .search input {
-    -webkit-appearance: none;
-    appearance: none;
-    
-    box-sizing: border-box; 
-    
-    height: 32px; 
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+    .searchbar input {
+      -webkit-appearance: none;
+      appearance: none;
+      box-sizing: border-box;
+      height: 32px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
     .bookviewCard {
       width: 100%;
