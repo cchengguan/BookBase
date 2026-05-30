@@ -305,9 +305,11 @@ body {
         font-size: medium;
         width: 40%;
         height: 32px;
-        padding-top: 0;
-        padding-bottom: 0;
         box-sizing: border-box;
+        min-height: 32px;
+        max-height: 32px;
+        padding: 0;
+        margin: 0;
     }
 
     .search img {
