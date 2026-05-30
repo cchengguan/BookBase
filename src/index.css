@@ -333,7 +333,6 @@ body {
   .search,
   .genreSelect {
     height: 32px;
-    min-height: 32px;
     padding: 0;
   }
 
