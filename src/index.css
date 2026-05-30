@@ -305,13 +305,10 @@ body {
         font-size: medium;
         width: 40%;
         height: 32px;
-        line-height: 32px;
-        padding: 0 10px;
-        box-sizing: border-box;
     }
 
     .search img {
-      padding-top: 0;
+      padding-top: 2px;
       height: 28px;
       width: 28px;
     }
@@ -319,11 +316,6 @@ body {
     .search {
       height: 32px;
       width: 38px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      box-sizing: border-box;
     }
 
     .bookviewCard {
@@ -341,15 +333,6 @@ body {
   .genreSelect {
     height: 32px;
     min-height: 32px;
-    line-height: 32px;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .search img {
