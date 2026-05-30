@@ -38,6 +38,8 @@ body {
 }
 
 .searchbar input {
+    -webkit-appearance: none;
+    appearance: none;
     border: none;
     font-size: x-large;
     height: 40px;
@@ -260,6 +262,8 @@ body {
 }
 
 .genreSelect {
+  -webkit-appearance: none;
+  appearance: none;
   font-size: medium;
   outline: none;
   border: none;
@@ -315,9 +319,6 @@ body {
     }
 
     .searchbar input {
-      -webkit-appearance: none;
-      appearance: none;
-      box-sizing: border-box;
       height: 32px;
       padding-top: 0;
       padding-bottom: 0;
