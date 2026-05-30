@@ -41,7 +41,7 @@ body {
     -webkit-appearance: none;
     appearance: none;
     border: none;
-    font-size: medium;
+    font-size: large;
     height: 40px;
     width: 420px;
     outline: none;
@@ -312,8 +312,8 @@ body {
 
     .search img {
       padding-top: 0;
-      height: 20px;
-      width: 20px;
+      height: 28px;
+      width: 28px;
     }
 
     .search {
