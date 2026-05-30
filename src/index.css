@@ -306,9 +306,6 @@ body {
         width: 40%;
         height: 32px;
         box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        line-height: 32px;
     }
 
     .search img {
@@ -328,5 +325,15 @@ body {
 
     .embeddedBookView {
       width: 100%
+    }
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+    .searchbar input,
+    .search,
+    .genreSelect {
+        height: 32px;
+        font-size: 16px;
+        box-sizing: border-box;
     }
 }
