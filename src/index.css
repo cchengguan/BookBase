@@ -46,6 +46,7 @@ body {
     caret-color: rgba(39, 147, 255, 0.9);
     background: rgba(255, 255, 255, 0.2);
     color: grey;
+    -webkit-text-fill-color: grey;
 }
 
 .search {
