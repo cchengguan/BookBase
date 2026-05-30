@@ -44,7 +44,9 @@ body {
     width: 420px;
     outline: none;
     caret-color: rgba(39, 147, 255, 0.9);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     color: grey;
     -webkit-text-fill-color: grey;
 }
@@ -55,7 +57,7 @@ body {
     font-size: x-large;
     border: none;
     outline: none;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
@@ -261,8 +263,8 @@ body {
   font-size: medium;
   outline: none;
   border: none;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 42px;
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   color: grey;
