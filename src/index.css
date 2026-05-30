@@ -328,12 +328,10 @@ body {
     }
 }
 
-@media (max-width: 480px) and (orientation: landscape) {
-    .searchbar input,
-    .search,
-    .genreSelect {
-        height: 32px;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
+@media (orientation: landscape) and (max-height: 480px) {
+  .searchbar input,
+  .search,
+  .genreSelect {
+    height: 32px;
+  }
 }
