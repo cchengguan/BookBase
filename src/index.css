@@ -305,6 +305,7 @@ body {
         font-size: medium;
         width: 40%;
         height: 32px;
+        padding: 0;
     }
 
     .search img {
@@ -333,6 +334,7 @@ body {
   .genreSelect {
     height: 32px;
     min-height: 32px;
+    padding: 0;
   }
 
   .search img {
