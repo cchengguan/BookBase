@@ -41,7 +41,7 @@ body {
     -webkit-appearance: none;
     appearance: none;
     border: none;
-    font-size: x-large;
+    font-size: large;
     height: 40px;
     width: 420px;
     outline: none;
@@ -51,12 +51,12 @@ body {
     -webkit-backdrop-filter: blur(20px) saturate(180%);
     color: grey;
     -webkit-text-fill-color: grey;
+    font-weight: bold;
 }
 
 .search {
     height: 42px;
     width: 50px;
-    font-size: x-large;
     border: none;
     outline: none;
     background: rgba(255, 255, 255, 0.4);
