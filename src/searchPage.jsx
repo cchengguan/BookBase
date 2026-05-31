@@ -186,7 +186,7 @@ const SearchPage = () => {
                     {(selectedBook.volumeInfo.industryIdentifiers?.[1] ?? selectedBook.volumeInfo.industryIdentifiers?.[0])?.identifier ?? "N/A"}
                 </p>
             </div>
-            <div className="embeddedBookView" id="preview">
+            <div className="embeddedBookView">
             {isbn && isbn !== "N/A" ? (
                 <EmbeddedViewer isbn={isbn} />
             ) : (
