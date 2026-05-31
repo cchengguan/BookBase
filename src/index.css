@@ -186,7 +186,7 @@ body {
 
 .bookviewCard h1 {
   margin-top: 16px;
-  margin-bottom: 0px;
+  margin-bottom: 4px;
   align-self: center;
   width: 100%;
   text-align: center;
@@ -195,13 +195,13 @@ body {
 .Back {
   margin-bottom: 16px;
   background-color: rgba(0, 0, 0, 0.0);
-  outline:none;
+  outline: none;
   border: none;
 }
 
 .Back img {
   height: 50px;
-  width:auto;
+  width: auto;
 }
 
 .Back:hover {
@@ -227,7 +227,7 @@ body {
 }
 
 .rating {
-  margin-top: 8px;
+  margin-top: 4px;
   margin-bottom: 8px;
   font-size: xx-large;
   align-self: center;
@@ -256,6 +256,10 @@ body {
 
 .Linkcontainer {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .bookviewCard h3,
@@ -286,10 +290,12 @@ body {
       width: auto;
       height: 180px;
     }
+
     .star {
       height: 12px;
       width: 12px;
     }
+
     .bookCard {
       width: 41%;
       height: 300px;
@@ -297,10 +303,6 @@ body {
 
     .bookCard h2 {
       margin-bottom: 4px;
-    }
-
-    .bookCard p {
-      font-size: medium;
     }
 
     .genreSelect {
@@ -328,6 +330,10 @@ body {
 
     .bookviewCard {
       width: 100%;
+    }
+
+    .Link {
+      font-size: medium;
     }
 
     .embeddedBookView {

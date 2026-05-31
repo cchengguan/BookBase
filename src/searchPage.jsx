@@ -163,7 +163,7 @@ const SearchPage = () => {
                 <a href="#preview" className="previewContainer"><button className="preview">Preview</button></a>
                 <h3>{selectedBook.volumeInfo.subtitle}</h3>
                 <span className="Linkcontainer">
-                    {(availability === "public"  || availability === 'borrowable') && (<button className="Link" onClick={() => window.open(`https://openlibrary.org/isbn/${isbn}`, '_blank')}>Open Library</button>)}
+                    {(availability === "public" || availability === 'borrowable') && (<button className="Link" onClick={() => window.open(`https://openlibrary.org/isbn/${isbn}`, '_blank')}>Open Library</button>)}
                     {isbn && (
                         <button className="Link" onClick={() => window.open(`https://catalogue.nlb.gov.sg/search?query=${isbn}&searchType=everything&pageSize=20&viewType=grid`, '_blank')}>
                             NLB
@@ -186,7 +186,7 @@ const SearchPage = () => {
                     {(selectedBook.volumeInfo.industryIdentifiers?.[1] ?? selectedBook.volumeInfo.industryIdentifiers?.[0])?.identifier ?? "N/A"}
                 </p>
             </div>
-            <div className="embeddedBookView">
+            <div className="embeddedBookView" id="preview">
             {isbn && isbn !== "N/A" ? (
                 <EmbeddedViewer isbn={isbn} />
             ) : (
