@@ -159,8 +159,7 @@ body {
 .bookviewCard {
   flex: 1;
   width: 50%;
-  height: 100%;
-  overflow: hidden;       
+  height: 100%;      
   display: flex;
   flex-direction: column;
   align-items: flex-start;;
@@ -241,6 +240,7 @@ body {
 .preview {
   color: white;
   font-size: x-large;
+  font-weight: bold;
   border: none;
   border-radius: 6px;
   outline: none;
@@ -261,7 +261,6 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 .bookviewCard h3,
@@ -332,6 +331,14 @@ body {
 
     .bookviewCard {
       width: 100%;
+    }
+
+    .Link {
+      font-size: medium;
+    }
+
+    .preview {
+      font-size: large;
     }
 
     .embeddedBookView {
