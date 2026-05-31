@@ -211,6 +211,7 @@ body {
 .Link {
   color: white;
   font-size: large;
+  font-weight: bold;
   border: none;
   border-radius: 6px;
   outline: none;
@@ -260,6 +261,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .bookviewCard h3,
@@ -330,10 +332,6 @@ body {
 
     .bookviewCard {
       width: 100%;
-    }
-
-    .Link {
-      font-size: medium;
     }
 
     .embeddedBookView {
