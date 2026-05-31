@@ -122,19 +122,18 @@ const SearchPage = () => {
             <div className="booklist">
                 {bookList.map((book) => (
                     <button className="bookCard" key={book.id} onClick={() => handleBookClick(book)}>
-                        <img src = {book.volumeInfo.imageLinks?.thumbnail} alt={book.id}/>
+                        <img className="thumbnail" src = {book.volumeInfo.imageLinks?.thumbnail} alt={book.id}/>
                         <h2>{book.volumeInfo.title}</h2>
-                        <p className="rating">{book.volumeInfo.averageRating ? [...Array(5)].map((_, i) => {
-                                const rating = book.volumeInfo.averageRating || 0
-                                if (i < Math.floor(rating))
+                        <p className="rating">{book.volumeInfo.averageRating ? [...Array(Math.ceil(book.volumeInfo.averageRating))].map((_, i) => {
+                                const rating = book.volumeInfo.averageRating
+                                if (rating - i >= 1)
                                 {
-                                    return <span key={i} style={{ color: '#f39c12' }}>★</span>
+                                    return <img className="star" src="star.png" alt={i}/>
                                 }
-                                if (i === Math.floor(rating) && rating % 1 >= 0.5)
+                                else
                                 {
-                                    return <span key={i} style={{ color: '#f39c12' }}>⯪</span>
+                                    return <img className="star" src="rating.png" alt={i}/>
                                 }
-                                return <span key={i} style={{ color: '#ccc' }}>☆</span>;
                             }) : " "}</p>
                     </button>
                 ))}
@@ -145,22 +144,19 @@ const SearchPage = () => {
                 <button className="Back" onClick={handleBackClick}>
                     <img src="left-arrow.png" alt="Back"/>
                 </button>
-                <img src={selectedBook.volumeInfo.imageLinks?.thumbnail} alt={selectedBook.id}/>
+                <img className="bookviewCardImg" src={selectedBook.volumeInfo.imageLinks?.thumbnail} alt={selectedBook.id}/>
                 <h1>{selectedBook.volumeInfo.title}</h1>
                 <div className="rating">{selectedBook.volumeInfo.averageRating ? <strong>
-                    {[...Array(5)].map((_, i) => {
-                        const rating = selectedBook.volumeInfo.averageRating || 0;
-                        
-                        // Full star condition
-                        if (i < Math.floor(rating)) {
-                        return <span key={i} style={{ color: '#f39c12' }}>★</span>;
+                    {[...Array(Math.ceil(selectedBook.volumeInfo.averageRating))].map((_, i) => {
+                        const rating = selectedBook.volumeInfo.averageRating
+                        if (rating - i >= 1) 
+                        {
+                            return <img className="bigStar" src="star.png" alt={i}/>
                         }
-                        // Half star condition (e.g., index 4 for a 4.5 rating)
-                        if (i === Math.floor(rating) && rating % 1 >= 0.5) {
-                        return <span key={i} style={{ color: '#f39c12' }}>⯪</span>; // Or use "½"
+                        else 
+                        {
+                            return <img className="bigStar" src="rating.png" alt={i}/>
                         }
-                        // Empty star condition
-                        return <span key={i} style={{ color: '#ccc' }}>☆</span>;
                     })}
                     </strong> : " "}
                 </div>
