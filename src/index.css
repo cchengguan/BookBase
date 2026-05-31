@@ -261,6 +261,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: auto;
+  width: 100%;
 }
 
 .bookviewCard h3,
