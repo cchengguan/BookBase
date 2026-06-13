@@ -14,4 +14,4 @@ A intuitive and responsive web application showcasing a diverse array of book ti
 * **Frontend:** React / JS
 * **Styling:** CSS 
 * **Build Tool:** Vite
-* **API:** Google Books API
+* **API:** Google Books API, Open Library API
