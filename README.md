@@ -1,5 +1,5 @@
 # BookBase
-A intuitive and responsive web application showcasing a diverse array of book titles from all over the world for easy access and discovery.
+An intuitive and responsive web application showcasing diverse book titles from all over the world for convenient access and previewing.
 
 ## 🚀 Features
 * **Dynamic Search:** Instantly look up books by title, author, keywords or ISBN.
